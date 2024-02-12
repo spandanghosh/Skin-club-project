@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "SangBleu Sunrise";
+  src: url("./assets/fonts/SangBleuSunrise-Regular.otf");
+}
+@font-face {
+  font-family: "PT Serif";
+  src: url("./assets/fonts/PT_Serif-Web-Regular.ttf");
+}
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("./assets/fonts/TradeGothicLTStd-BoldExt.ttf");
+}
+
+.swal2-container{
+  @apply font-tradeGothic;
+}
+
+body {
+  @apply font-sangBleu;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input::placeholder {
+  @apply font-ptSerif text-[14px];
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
